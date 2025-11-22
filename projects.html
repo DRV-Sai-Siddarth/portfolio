@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - D. Rudreshwara Venkata Sai Siddarth</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Sai Siddarth</a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li class="nav-item"><a href="experience.html" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="certificates.html" class="nav-link">Certificates</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span class="theme-icon">🌙</span>
+        <span class="theme-text">Dark Mode</span>
+    </button>
+
+    <div class="page-header">
+        <h1>My Projects</h1>
+        <p>Explore my portfolio of innovative solutions</p>
+    </div>
+
+    <section class="content-section">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="data">Data Engineering</button>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Project Card 1: Satellite Image Change Detection -->
+            <div class="project-card" data-category="ml data">
+                <img src="https://via.placeholder.com/400x200" alt="Change Detection Project" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Satellite Image Change Detection</h3>
+                    <p class="project-description">
+                        Deep learning-based change detection system for satellite imagery using ChangeTransformer and UNet. Preprocessing pipelines for TIFF/GIS. High-performance GPU inference and modular Python code.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">GIS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DRV-Sai-Siddarth/change-detection" class="project-link github" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2: Hiring Letters Generator -->
+            <div class="project-card" data-category="web">
+                <img src="https://via.placeholder.com/400x200" alt="Hiring Letters Generator" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Hiring Letters Generator</h3>
+                    <p class="project-description">
+                        Automated hiring letter document generation system with batch processing, built in Django. Streamlined HR workflows and improved consistency in offer communications.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DRV-Sai-Siddarth/Hiring-Letters-Generator" class="project-link github" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3: ETL Data Pipeline -->
+            <div class="project-card" data-category="data">
+                <img src="https://via.placeholder.com/400x200" alt="Data Engineering Project" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Big Data ETL Pipeline</h3>
+                    <p class="project-description">
+                        Scalable ETL pipelines designed with Hadoop, Spark, and Kafka for real-time data ingestion, transformation, and analytics. Modular code, CI/CD and monitoring.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Apache Spark</span>
+                        <span class="tag">Hadoop</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DRV-Sai-Siddarth/bigdata-etl-pipeline" class="project-link github" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4: Interactive Portfolio Website -->
+            <div class="project-card" data-category="web">
+                <img src="https://via.placeholder.com/400x200" alt="Portfolio" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Interactive Portfolio Website</h3>
+                    <p class="project-description">
+                        This portfolio site! Responsive, themed, dark/light mode toggle, Spider-Man cursor/effects, and animated sections. Built with modern CSS and clean JS.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Canvas API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DRV-Sai-Siddarth/portfolio" class="project-link github" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 5: Campus RAG Chatbot -->
+            <div class="project-card" data-category="ml web">
+                <img src="https://via.placeholder.com/400x200" alt="Campus Chatbot" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Campus RAG Chatbot</h3>
+                    <p class="project-description">
+                        Retrieval-Augmented Generation chatbot integrating campus docs, Google Maps, and event info using LangChain, FAISS, FastAPI, React.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">LangChain</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">React</span>
+                        <span class="tag">FAISS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 6: Real-Time Face Recognition -->
+            <div class="project-card" data-category="ml">
+                <img src="https://via.placeholder.com/400x200" alt="Face Recognition Attendance" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Face Recognition Attendance System</h3>
+                    <p class="project-description">
+                        Attendance system using Python, OpenCV, real-time face recognition, and Firebase. Overlay UI and persistent storage.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Face Recognition</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/DRV-Sai-Siddarth" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/d-r-v-sai-siddarth" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:saisiddarth2.o@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 D. Rudreshwara Venkata Sai Siddarth. All rights reserved.</p>
+            <p>Designed & Built with <i class="fas fa-heart" style="color: #ff6b6b;"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Project filtering functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                const filter = button.getAttribute('data-filter');
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

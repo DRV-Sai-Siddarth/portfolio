@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Sai Siddarth</a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="experience.html" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="certificates.html" class="nav-link">Certificates</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span class="theme-icon">🌙</span>
+        <span class="theme-text">Dark Mode</span>
+    </button>
+
+    <div class="page-header">
+        <h1>Get In Touch</h1>
+        <p>Let's work together on something amazing!</p>
+    </div>
+
+    <section class="content-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p style="margin-bottom: 30px; opacity: 0.9;">
+                    Feel free to reach out to me for collaborations, opportunities, or just to say hi!
+                </p>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>saisiddarth2.o@gmail.com</p>
+                        <a href="mailto:saisiddarth2.o@gmail.com" class="contact-link">Send Email</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 9948308255</p>
+                        <a href="tel:+919948308255" class="contact-link">Call Me</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Hyderabad, Telangana, India</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-github contact-icon"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/DRV-Sai-Siddarth</p>
+                        <a href="https://github.com/DRV-Sai-Siddarth" target="_blank" class="contact-link">View Profile</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/d-r-v-sai-siddarth</p>
+                        <a href="https://www.linkedin.com/in/d-r-v-sai-siddarth/" target="_blank" class="contact-link">Connect</a>
+                    </div>
+                </div>
+
+                <div class="social-links-section">
+                    <h4>Follow Me On</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/DRV-Sai-Siddarth" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/d-r-v-sai-siddarth/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:saisiddarth2.o@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <h2>Send Me a Message</h2>
+                <p style="margin-bottom: 30px; opacity: 0.9;">
+                    Have a question or want to work together? Fill out the form below!
+                </p>
+
+                <!-- Success/Error Messages -->
+                <div id="formMessage" class="form-message" style="display: none;"></div>
+
+                <div class="form-group">
+                    <label for="name">
+                        <i class="fas fa-user"></i> Full Name
+                    </label>
+                    <input type="text" id="name" name="from_name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i> Email Address
+                    </label>
+                    <input type="email" id="email" name="reply_to" placeholder="john@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">
+                        <i class="fas fa-tag"></i> Subject
+                    </label>
+                    <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">
+                        <i class="fas fa-comment"></i> Message
+                    </label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button" id="submitBtn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/DRV-Sai-Siddarth" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/d-r-v-sai-siddarth/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:saisiddarth2.o@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>Designed & Built with <i class="fas fa-heart" style="color: #ff6b6b;"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("P1YMMj9bWBVk3EcUO"); // Replace with your EmailJS public key
+        })();
+
+        // Handle Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const formMessage = document.getElementById('formMessage');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Send email using EmailJS
+            emailjs.sendForm('service_z4yj5eo', 'template_8sbb3os', this)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Show success message
+                    formMessage.style.display = 'block';
+                    formMessage.className = 'form-message success';
+                    formMessage.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully! I\'ll get back to you soon.';
+                    
+                    // Reset form
+                    document.getElementById('contactForm').reset();
+                    
+                    // Reset button
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                    
+                    // Hide message after 5 seconds
+                    setTimeout(() => {
+                        formMessage.style.display = 'none';
+                    }, 5000);
+                    
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    
+                    // Show error message
+                    formMessage.style.display = 'block';
+                    formMessage.className = 'form-message error';
+                    formMessage.innerHTML = '<i class="fas fa-exclamation-circle"></i> Failed to send message. Please try again or email me directly.';
+                    
+                    // Reset button
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                    
+                    // Hide message after 5 seconds
+                    setTimeout(() => {
+                        formMessage.style.display = 'none';
+                    }, 5000);
+                });
+        });
+    </script>
+</body>
+</html>

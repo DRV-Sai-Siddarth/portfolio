@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - D. Rudreshwara Venkata Sai Siddarth</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Sai Siddarth</a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="experience.html" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="certificates.html" class="nav-link">Certificates</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span class="theme-icon">🌙</span>
+        <span class="theme-text">Dark Mode</span>
+    </button>
+
+    <div class="page-header">
+        <h1>Blog Posts</h1>
+        <p>Thoughts, tutorials, and insights on tech</p>
+    </div>
+
+    <section class="content-section">
+        <div class="blog-grid">
+            <!-- Blog Card 1 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200/667eea/ffffff?text=Machine+Learning" alt="Machine Learning Blog" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category"><i class="fas fa-brain"></i> Machine Learning</span>
+                        <span class="blog-date"><i class="fas fa-calendar"></i> November 15, 2025</span>
+                    </div>
+                    <h3 class="blog-title">Understanding Deep Learning for Satellite Imagery</h3>
+                    <p class="blog-excerpt">
+                        Exploring how deep learning techniques like ChangeTransformer and UNet 
+                        can be applied to detect changes in satellite images. A comprehensive 
+                        guide for beginners.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200/764ba2/ffffff?text=Web+Development" alt="Web Development Blog" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category"><i class="fas fa-code"></i> Web Development</span>
+                        <span class="blog-date"><i class="fas fa-calendar"></i> November 10, 2025</span>
+                    </div>
+                    <h3 class="blog-title">Building Modern Web Apps with Django and React</h3>
+                    <p class="blog-excerpt">
+                        A step-by-step tutorial on creating full-stack applications using Django 
+                        as the backend and React for the frontend. Includes authentication and 
+                        API integration.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Full Stack</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200/4ecdc4/ffffff?text=Data+Engineering" alt="Data Engineering Blog" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category"><i class="fas fa-database"></i> Data Engineering</span>
+                        <span class="blog-date"><i class="fas fa-calendar"></i> November 5, 2025</span>
+                    </div>
+                    <h3 class="blog-title">Data Engineering Best Practices with Apache Spark</h3>
+                    <p class="blog-excerpt">
+                        Learn how to build scalable data pipelines using Apache Spark, Hadoop, 
+                        and Kafka. Real-world examples from my internship experience.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">Apache Spark</span>
+                        <span class="tag">Big Data</span>
+                        <span class="tag">ETL</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Card 4 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200/ff6b6b/ffffff?text=Career+Tips" alt="Career Blog" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category"><i class="fas fa-briefcase"></i> Career</span>
+                        <span class="blog-date"><i class="fas fa-calendar"></i> October 28, 2025</span>
+                    </div>
+                    <h3 class="blog-title">From Student to Data Engineering Intern: My Story</h3>
+                    <p class="blog-excerpt">
+                        Sharing my experience at Infoshare and Lokachakra with internship prep and project strategies for students aiming AI/ML & backend careers.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">Career</span>
+                        <span class="tag">Internship</span>
+                        <span class="tag">Tips</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Card 5 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200/f093fb/ffffff?text=Python+Tips" alt="Python Blog" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category"><i class="fab fa-python"></i> Python</span>
+                        <span class="blog-date"><i class="fas fa-calendar"></i> October 20, 2025</span>
+                    </div>
+                    <h3 class="blog-title">10 Python Tips Every Data Scientist Should Know</h3>
+                    <p class="blog-excerpt">
+                        Essential Python tricks and best practices for data science and machine 
+                        learning workflows. Boost your productivity with these tips.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Data Science</span>
+                        <span class="tag">Tips</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Card 6 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200/43e97b/ffffff?text=AI+Ethics" alt="AI Ethics Blog" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category"><i class="fas fa-robot"></i> AI/ML</span>
+                        <span class="blog-date"><i class="fas fa-calendar"></i> October 12, 2025</span>
+                    </div>
+                    <h3 class="blog-title">Ethics in AI: Responsible Machine Learning Practices</h3>
+                    <p class="blog-excerpt">
+                        Discussing the importance of ethics in artificial intelligence and how 
+                        to implement responsible AI practices in your projects.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="tag">AI Ethics</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Opinion</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/DRV-Sai-Siddarth" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/d-r-v-sai-siddarth" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:saisiddarth2.o@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 D. Rudreshwara Venkata Sai Siddarth. All rights reserved.</p>
+            <p>Designed & Built with <i class="fas fa-heart" style="color: #ff6b6b;"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

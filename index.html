@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D. Rudreshwara Venkata Sai Siddarth - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Sai Siddarth</a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="experience.html" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="certificates.html" class="nav-link">Certificates</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span class="theme-icon">🌙</span>
+        <span class="theme-text">Dark Mode</span>
+    </button>
+
+    <section class="hero" id="home">
+        <canvas id="webCanvas"></canvas>
+        <div class="hero-content">
+            <h1 class="typing-text">
+                <span class="typing-prefix">Hi, I'm </span>
+                <span id="typedName"></span>
+                <span class="cursor">|</span>
+            </h1>
+            <p class="tagline">AI/ML | Data Engineering | Front-End Developer</p>
+            <p class="description">
+                Final-year CSE (AI & ML) undergraduate. 
+                I design and build robust backend services, ML/data pipelines, and automation tools with a focus on performance and reliability.<br>
+                Open to SDE, Data Engineering, and AI roles!
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/DRV-Sai-Siddarth" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/d-r-v-sai-siddarth" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:saisiddarth2.o@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="cta-buttons">
+                <a href="projects.html" class="cta-button primary"><i class="fas fa-briefcase"></i> View Projects</a>
+                <a href="contact.html" class="cta-button secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glimpse of All Pages Section -->
+    <section class="glimpse-section">
+        <h2 class="section-title">Explore My Portfolio</h2>
+        <div class="glimpse-grid">
+            <div class="glimpse-card">
+                <div class="glimpse-icon"><i class="fas fa-user"></i></div>
+                <h3>About Me</h3>
+                <p>Read my journey from college learning to real-world engineering and ML deployments.</p>
+                <a href="about.html" class="glimpse-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="glimpse-card">
+                <div class="glimpse-icon"><i class="fas fa-code"></i></div>
+                <h3>Projects</h3>
+                <p>Explore my work in Python, Java, C++, RESTful APIs, automation, and cloud engineering.</p>
+                <a href="projects.html" class="glimpse-btn">View Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="glimpse-card">
+                <div class="glimpse-icon"><i class="fas fa-briefcase"></i></div>
+                <h3>Experience</h3>
+                <p>Internship and technical experience at Infoshare, Lokachakra, and through major university projects.</p>
+                <a href="experience.html" class="glimpse-btn">View Experience <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="glimpse-card">
+                <div class="glimpse-icon"><i class="fas fa-certificate"></i></div>
+                <h3>Certificates</h3>
+                <p>Recognized for AI/ML, backend, and cloud skills with NPTEL, IBM, DeepLearning.AI, and more.</p>
+                <a href="certificates.html" class="glimpse-btn">View Certificates <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="glimpse-card">
+                <div class="glimpse-icon"><i class="fas fa-blog"></i></div>
+                <h3>Blog</h3>
+                <p>Insights, tutorials, and practical guides on AI, Python, ML, and building robust server systems.</p>
+                <a href="blog.html" class="glimpse-btn">Read Blog <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="glimpse-card">
+                <div class="glimpse-icon"><i class="fas fa-envelope"></i></div>
+                <h3>Contact</h3>
+                <p>Let's connect! I'm open to internships, jobs, collaborations, and technical discussions.</p>
+                <a href="contact.html" class="glimpse-btn">Contact Me <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/DRV-Sai-Siddarth" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/d-r-v-sai-siddarth" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:saisiddarth2.o@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 D. Rudreshwara Venkata Sai Siddarth. All rights reserved.</p>
+            <p>Designed & Built with <i class="fas fa-heart" style="color: #ff6b6b;"></i></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
